@@ -1,0 +1,30 @@
+{
+  "name": "rolostudios.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all": "yarn web && yarn js && yarn ios",
+    "web": "theo color.yml --transform web --format scss > colors.scss",
+    "js": "theo color.yml --format module.js > colors.js",
+    "ios": "theo color.yml --setup setup.js --format ios.color.swift > UIColor+Token.swift"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolostudios/rolostudios.github.io.git"
+  },
+  "keywords": [
+    "design",
+    "brand",
+    "guidelines"
+  ],
+  "author": "RoloStudios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rolostudios/rolostudios.github.io/issues"
+  },
+  "homepage": "https://github.com/rolostudios/rolostudios.github.io#readme",
+  "dependencies": {
+    "theo": "github:salesforce-ux/theo"
+  }
+}
