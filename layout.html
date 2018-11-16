@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=1,user-scalable=0">
+    <title>RoloStudios Design</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="assets/img/favicon.png">
+  </head>
+  <body>
+  <div class="App">
+    <div class="guide-body">
+      <div class="guide-content-wrapper">
+      <main class="guide-content">
+        <style>
+    table{width: fit-content;}
+    td {padding: 4px 16px 4px 0}
+</style>
+
+<h1 id="layout">Layout</h1>
+
+<h2 id="small-screens">Small screens</h2>
+<p>Use a flexible one column layout with 24px gutters on the side on iOS, Android and mobile web.</p>
+
+<h2 id="medium-and-large-screens">Medium and large screens</h2>
+<p>Use a 12 column grid with 24px inner gutters and 24px outer gutter. Medium screens use a fixed width centered 12 column layout (min-width: 744px, 696px content width with 24px gutters on the side). Large screens use a fixed width centered 12 column layout (min-width: 1128px, 1080px content width with 24px gutters on the side)</p>
+
+<h2 id="all-screens">All screens</h2>
+<p>Use an 8px baseline grid for vertical and horizontal components and spacing when it makes sense. We use a 4px baseline grid for typography. This makes the type leadings work well with components and spacing. Exceptions can be made for native interface elements like iOS Nav and Tabbars.</p>
+
+<h2 id="spacing">Spacing</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>40</td>
+      <td>40px</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>48px</td>
+    </tr>
+    <tr>
+      <td>Huge</td>
+      <td>32px</td>
+    </tr>
+    <tr>
+      <td>Large</td>
+      <td>24px</td>
+    </tr>
+    <tr>
+      <td>Mega</td>
+      <td>48px</td>
+    </tr>
+    <tr>
+      <td>Regular</td>
+      <td>16px</td>
+    </tr>
+    <tr>
+      <td>Small</td>
+      <td>8px</td>
+    </tr>
+    <tr>
+      <td>Tiny</td>
+      <td>4px</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="radius">Radius</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Medium</td>
+      <td>8px</td>
+    </tr>
+    <tr>
+      <td>Regular</td>
+      <td>3px</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </main>
+      </div>
+      <nav class="guide-navigation">
+        <ul>
+          <li><a href="index.html">Get started</a></li>
+          <li><a href="color.html">Color</a></li>
+          <li><a href="typography.html">Typography</a></li>
+          <li><a href="index.html">Layout</a></li>
+          <li><a href="brand.html">Brand</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <input type="text" class="clipboardHelper"/>
+  <div class="clipboardNotifier"></div>
+  <script>
+    var timerHandle;
+    function copyToClipboard(text) {
+      var input = document.querySelector(".clipboardHelper");
+      var notifier = document.querySelector(".clipboardNotifier");
+      input.value = text;
+      notifier.innerText = `Copied ${text}`;
+      notifier.classList.add('isVisible');
+      if (timerHandle) clearTimeout(timerHandle);
+      timerHandle = setTimeout(function() {
+        notifier.classList.remove('isVisible');
+      }, 2000);
+      input.select();
+      document.execCommand("copy");
+    }
+  </script>
+</body>
+</html>
