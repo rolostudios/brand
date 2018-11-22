@@ -1,15 +1,40 @@
-/*** Norms ***/
-@font-face { font-family: "TT Norms"; font-weight: 400; src: url("fonts/TTNorms-Regular.woff"); }
-@font-face { font-family: "TT Norms"; font-weight: 500; src: url("fonts/TTNorms-Medium.woff"); }
-@font-face { font-family: "TT Norms"; font-weight: 700; src: url("fonts/TTNorms-Bold.woff"); }
-/*** Circuit ***/
-@font-face { font-family: "Circuit"; font-weight: 700; src: url("fonts/Circuit.woff"); }
-@font-face { font-family: "Circuit Outline"; font-weight: 700; src: url("fonts/CircuitOutlineS.woff"); }
+/*** Gotham ***/
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/gotham-bold-webfont.woff") format("woff"), url("fonts/gotham-bold-webfont.woff2") format("woff2"); }
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/gotham-bold-italic-webfont.woff") format("woff"), url("fonts/gotham-bold-italic-webfont.woff2") format("woff2"); }
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/gotham-book-webfont.woff") format("woff"), url("fonts/gotham-book-webfont.woff2") format("woff2"); }
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 500;
+  src: url("fonts/gotham-book-italic-webfont.woff") format("woff"), url("fonts/gotham-book-italic-webfont.woff2") format("woff2"); }
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/gotham-light-webfont.woff") format("woff"), url("fonts/gotham-light-webfont.woff2") format("woff2"); }
+@font-face {
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/gotham-light-italic-webfont.woff") format("woff"), url("fonts/gotham-light-italic-webfont.woff2") format("woff2"); }
+
 * { box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-body { font-family: TT Norms; font-size: 16px; line-height: 24px; color: #333333; margin: 0; padding: 0; }
+body { font-family: Gotham; font-size: 16px; line-height: 24px; color: #333333; margin: 0; padding: 0; }
 
-a { color: #0055ff; font-weight: 500; }
+a { color: #fa402e; font-weight: 500; }
 a:hover { text-decoration: underline; }
 
 .App { display: flex; min-height: 100vh; flex-direction: column; }
@@ -101,7 +126,7 @@ hr { border: none; border-top: 1px solid #e7e7e7; width: 100%; height: 1px; marg
 
 .highlighter-rouge { border-radius: 3px; padding: 0 4px; font-size: 0.98em; background: #ffffff; }
 
-.intro-big { font-size: 24px; line-height: 32px; margin-bottom: 32px; padding: 24px 24px; margin: 24px 0 56px 0; background: #ffffff; border-left: 3px solid #0055ff; }
+.intro-big { font-size: 24px; line-height: 32px; margin-bottom: 32px; padding: 24px 24px; margin: 24px 0 56px 0; background: #ffffff; border-left: 3px solid #fa402e; }
 
 @media only screen and (max-width: 480px) { .guide-navigation { flex: 0; order: 2; }
   .guide-body { display: flex; flex-direction: column; }
